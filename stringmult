@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+#take input.
+chomp($first = <STDIN>);
+$second = <STDIN>;
+
+#Do the multiplucation.
+	
+$third = $first x $second;
+
+print "The result is: $third";
