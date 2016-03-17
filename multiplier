@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+#take input.
+$first = <STDIN>;
+$second = <STDIN>;
+
+#Do the multiplucation.
+
+$third = $first * $second;
+
+print "The product is $third \n";
