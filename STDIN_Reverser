@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+#Take lines of standard input.
+@lines = <STDIN>;
+
+#Print the reverse.
+@lines = reverse @lines ;
+
+print @lines;

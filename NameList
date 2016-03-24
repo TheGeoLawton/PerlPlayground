@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use warnings;
+
+#Create the list.
+@names = qw(Fred Betty Barney Dino Wilma Pebbles Bamm-Bamm);
+
+#Take index inputs
+chomp(@selections = <STDIN>);
+
+#loop
+foreach $selection (@selections) {
+	print "$names[ $selection-1 ]\n";
+}

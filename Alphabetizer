@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+#Would you like each on a new line?
+print "Welcome to the alphabetizer! \n\n
+Would you like each entry on a (N)ewline, (T)ab, or (S)pace separated? \nType N, T or S and hit enter.\n";
+
+chomp($selection = <STDIN>); #STDIN here.
+$selection = uc $selection;
+
+$N = "\n";
+$T = "\t";
+$S = " ";
+
+$sep = $$selection;
+
+#Get standard input.
+print "Now type each name on a new line, and hit ctrl+d when finished.\n";
+chomp (@input = <STDIN>);
+@input = sort @input;
+
+print "\n \nYour sorted list is: \n";
+
+for (@input) {
+	print "$_$sep";
+}
+
